@@ -1,6 +1,6 @@
 function init_i2c_display()
-     sda = 1 -- NodeMCU D3
-     scl = 2 -- NodeMCU D4
+     sda = 1 -- NodeMCU D1
+     scl = 2 -- NodeMCU D2
      sla = 0x3c
      i2c.setup(0, sda, scl, i2c.SLOW)
      disp = u8g.ssd1306_128x64_i2c(sla)
